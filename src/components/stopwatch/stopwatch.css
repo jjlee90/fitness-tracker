@@ -1,0 +1,15 @@
+.timer {
+  margin: 25px 0 25px;
+
+  box-sizing: border-box;
+
+  font-size: xx-large;
+}
+
+button {
+  padding: 10px;
+  font-size: large;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  border-style: none;
+}

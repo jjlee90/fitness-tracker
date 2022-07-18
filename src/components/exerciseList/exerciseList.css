@@ -1,0 +1,14 @@
+table {
+  margin: 25px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: xx-large;
+  border: 2px solid black;
+}
+
+th,
+tr,
+td {
+  border: 1px solid black;
+}

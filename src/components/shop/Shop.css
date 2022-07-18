@@ -1,0 +1,24 @@
+* {
+  list-style: none;
+}
+
+.shopNav {
+  display: flex;
+
+  justify-content: center;
+}
+.shopNav > ul {
+  display: flex;
+}
+
+.shopImg {
+  display: flex;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.shopContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
