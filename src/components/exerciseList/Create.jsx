@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 
 export default function Create() {
   const [form, setForm] = useState({
@@ -42,6 +42,7 @@ export default function Create() {
 
   return (
     <div>
+      <Link to="/">Home</Link>
       <h3>Create New Record</h3>
       <form onSubmit={onSubmit}>
         <div>

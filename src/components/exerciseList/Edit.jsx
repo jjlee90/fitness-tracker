@@ -11,14 +11,16 @@ export default function Edit() {
 
   const params = useParams()
   const navigate = useNavigate()
-
+  console.log(params)
   useEffect(() => {
     async function fetchData() {
       const id = params.id.toString()
+      console.log({ id })
+      console.log(params.id)
       const response = await fetch(
         `http://localhost:3000/record/${params.id.toString()}`
       )
-
+      console.log("ouch")
       if (!response.ok) {
         const message = `An error has occurred: ${response.statusText}`
         window.alert(message)
@@ -85,7 +87,7 @@ export default function Edit() {
             type="text"
             id="name"
             value={form.exerciseName}
-            onChange={(e) => updateForm({ name: e.target.value })}
+            onChange={(e) => updateForm({ exerciseName: e.target.value })}
           />
         </div>
 
@@ -95,7 +97,7 @@ export default function Edit() {
             type="text"
             id="name"
             value={form.maxRep}
-            onChange={(e) => updateForm({ name: e.target.value })}
+            onChange={(e) => updateForm({ maxRep: e.target.value })}
           />
         </div>
 
